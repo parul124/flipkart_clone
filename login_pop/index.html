@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pure CSS Carousel</title>
+<style>
+    .carousel {
+        width: 100%; /* Set your desired width */
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .carousel-content {
+        display: flex;
+        animation: scroll 10s infinite linear; /* Adjust the duration and timing function as needed */
+    }
+
+    .carousel-item {
+        flex: 0 0 auto;
+        width: 100%; /* Ensure each item takes up the full width of the carousel */
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+</head>
+<body>
+
+<section class="carousel">
+    <section class="carousel-content" style="height: 400px;">
+        <div class="carousel-item" style="background-image: url(../asset/2nd/1.jpeg);background-position: center;background-size: cover;"></div>
+        <div class="carousel-item" style="background-image: url(../asset/3rd/2.jpeg);background-position: center;background-size: cover;"></div>
+        <div class="carousel-item" style="background-image: url(../asset/3rd/3.jpeg);background-position: center;background-size: cover;"></div>
+        
+    </section>
+</section>
+
+</body>
+</html>
